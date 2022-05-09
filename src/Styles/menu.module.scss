@@ -1,0 +1,57 @@
+.menuBtn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: bold !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    background: #fff;
+    margin: 0 .75rem;
+
+    &:hover {
+        background: linear-gradient(#ff2b06, #ff2b06) #fff no-repeat 0 0;
+        background-size: 0 100%;
+        animation: shine .25s linear forwards;
+    }
+}
+
+
+.animatedUnderline {
+    &:after{ 
+        content: '';
+        display: block;
+        height: 3px;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+    }
+    
+    &:not(:hover):after {
+        width: 0;
+    }
+    
+    &:hover:after {
+        width: 100%;
+        background: #fff!important;
+    }
+}
+
+@keyframes shine {
+    0% {
+        background-size: 0%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+.menuContainer{
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: linear-gradient(180deg, #000000c9 50%, #000000ab);
+    position: sticky;
+    top:0;
+    z-index: 1024;
+    padding-top: .75rem;
+    display: flex;
+}

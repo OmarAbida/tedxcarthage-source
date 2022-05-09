@@ -1,0 +1,50 @@
+@import "./bootstrap/bootstrap";
+
+@font-face {
+	font-family: Helvetica;
+	src: require('../fonts/Helvetica.ttf');
+	src: local(''),
+	url('../fonts/Helvetica.ttf') format('ttf'),
+	url('../fonts/Helvetica.woff2') format('woff2'),
+	url('../fonts/Helvetica.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Helvetica-Bold;
+	src: require('../fonts/Helvetica-Bold.ttf');
+	src: local(''),
+	url('../fonts/Helvetica-Bold.ttf') format('ttf'),
+	url('../fonts/Helvetica-Bold.woff2') format('woff2'),
+	url('../fonts/Helvetica-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Helvetica-Light;
+	src: require('../fonts/Helvetica-Light.ttf');
+	src: local(''),
+		url('../fonts/Helvetica-Light.ttf') format('ttf'),
+		url('../fonts/Helvetica-Light.woff2') format('woff2'),
+		url('../fonts/Helvetica-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$red : #ff2b06;
+$danger : #ff2b06;
+$font-size-base: 1rem; // Set the default font size to 14 px (it will be used to calculate other fonts sizes)
+$font-size-root: #{14}px; // Override the default font size of browser and bootsrap (from 16 to 14px)
+
+$grid-gutter-width: 0;
+
+body {
+	font-family: Helvetica, sans-serif, Arial!important;
+	background-color: #000;
+}
+
+.text-danger, .border-danger{
+	color : $red!important;
+}

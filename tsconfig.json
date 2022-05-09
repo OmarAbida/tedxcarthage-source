@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "baseUrl": "./",
+        "moduleResolution": "node",
+        "lib": [
+            "es2021",
+            "webworker",
+            "DOM",
+        ],
+        "jsx": "preserve",
+        "strict": true,
+        "resolveJsonModule": true
+    }
+}

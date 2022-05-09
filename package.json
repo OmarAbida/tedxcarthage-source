@@ -1,0 +1,36 @@
+{
+	"name": "tedxucar.tn",
+	"description": "Website of TEDx university of carthage",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "NODE_ENV=production && webpack --mode=production",
+		"dev": "NODE_ENV=development && webpack --mode=development",
+		"serve": "NODE_ENV=development && webpack serve --mode=development"
+	},
+	"author": "Omar Abida<Omar.abida96@gmail.com>",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.17.10",
+		"@babel/plugin-transform-runtime": "^7.17.10",
+		"@babel/preset-env": "^7.17.10",
+		"@babel/preset-react": "^7.16.7",
+		"@babel/preset-typescript": "^7.16.7",
+		"@types/node": "^17.0.31",
+		"@types/react": "^18.0.9",
+		"@types/react-dom": "^18.0.3",
+		"babel-loader": "^8.2.5",
+		"clean-webpack-plugin": "^4.0.0",
+		"css-loader": "^6.7.1",
+		"ejs-loader": "^0.5.0",
+		"html-webpack-plugin": "^5.5.0",
+		"mini-css-extract-plugin": "^2.6.0",
+		"react": "^18.1.0",
+		"react-bootstrap": "^2.3.1",
+		"react-dom": "^18.1.0",
+		"sass": "^1.51.0",
+		"sass-loader": "^12.6.0",
+		"webpack": "^5.72.0",
+		"webpack-cli": "^4.9.2",
+		"webpack-dev-server": "^4.9.0"
+	}
+}

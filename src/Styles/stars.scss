@@ -1,0 +1,123 @@
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-x: center;
+    background-size: cover;
+    animation: animateBg 50s linear infinite;
+}
+
+@keyframes animateBg {}
+
+span.star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.474);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+    animation: animate 3s linear infinite;
+}
+
+span.star::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.457), transparent);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: rotate(315deg) translateX(-1500px);
+        opacity: 0;
+
+    }
+
+}
+
+span.star:nth-child(1) {
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-duration: 5s;
+}
+
+span.star:nth-child(2) {
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-duration: 15s;
+}
+
+span.star:nth-child(3) {
+    top: 80px;
+    right: 0px;
+    left: initial;
+    animation-duration: 10s;
+}
+
+span.star:nth-child(4) {
+    top: 0;
+    right: 180px;
+    left: initial;
+    animation-duration: 7s;
+}
+
+span.star:nth-child(5) {
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-duration: 12.5s;
+}
+
+span.star:nth-child(6) {
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-duration: 15s;
+}
+
+span.star:nth-child(7) {
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-duration: 8..75s;
+}
+
+span.star:nth-child(8) {
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-duration: 6.25s;
+}
+
+span.star:nth-child(9) {
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-duration: 11.25s;
+}
+
+span.star:nth-child(10) {
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-duration: 11.25s;
+}

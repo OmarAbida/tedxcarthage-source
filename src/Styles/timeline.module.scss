@@ -1,0 +1,146 @@
+.timelineCard{
+    transition: opacity .5s linear, right .5s linear, left .5s linear;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: .75rem;
+    position: relative;
+    text-align: center;
+
+    * {
+        font-size: 2rem;
+    }
+
+    &.right {
+        margin-left: auto;
+    }
+    
+    &.left {
+        margin-left: 0;
+    }
+
+    &.hide{
+        opacity: 0;
+        &.right {
+            right: -75%;
+        }
+        &.left{
+            left: -75%;
+        }
+    }
+
+    &.show {
+        opacity: 1;
+        &.right {
+            right: 0%;
+        }
+        
+        &.left {
+            left: 0%;
+        }
+    }
+}
+
+.opacity {
+    transition: opacity .15s linear;
+    &.hide{
+        opacity: 0
+    }
+    &.show{
+        opacity: 1
+    }
+}
+
+
+.cssTyping{
+    &.show p {
+        border-right: .15em solid #fff;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        &:nth-child(1) {
+            width: 7.3em;
+            -webkit-animation: type 1s steps(40, end);
+            animation: type 1s steps(40, end);
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        &:nth-child(2) {
+            width: 11.5em;
+            opacity: 0;
+            -webkit-animation: type2 1s steps(40, end), blink .5s step-end infinite alternate;
+            animation: type2 1s steps(40, end), blink .5s step-end infinite alternate;
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+
+    99.9% {
+        border-right: .15em solid #fff;
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+@-webkit-keyframes type {
+    0% {
+        width: 0;
+    }
+
+    99.9% {
+        border-right: .15em solid #fff;
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    50% {
+        border-color: tranparent;
+    }
+}

@@ -1,0 +1,16 @@
+services:
+
+  web:
+    image: tedxucar_web:1.0.0
+    build:
+      context: ./
+      network: host
+    ports:
+      - 9000:9000
+    volumes:
+      - './src:/var/www/src'
+      - './dist:/var/www/dist'
+    environment:
+      - NODE_ENV=dev
+      - PROD_PUBLIC_PATH=https://omarabida.github.io/tedxucar/
+      - DEV_PUBLIC_PATH=http://localhost:9000/
